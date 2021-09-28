@@ -28,3 +28,31 @@ ol {
 ul {
     list-style: square;
 }
+
+#otsikko {
+    text-align: center;
+    border: 2px solid red;
+}
+
+#otsikko2 {
+    border-bottom: 3px solid blueviolet;
+    text-align: center;
+}
+
+
+#tekstiä {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 15px;
+}
+
+#kuva1 {
+    padding-left: 50px;
+    margin: 5px;
+}
+
+#kuva2 {
+    padding-left: 15px;
+}
