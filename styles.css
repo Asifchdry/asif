@@ -1,4 +1,7 @@
 body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
     color: white;
 }
@@ -55,4 +58,21 @@ ul {
 
 #kuva2 {
     padding-left: 15px;
+}
+
+#headeri {
+    background-color: #ff592b;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    
+}
+
+#navi {
+    background-color: burlywood;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+#sectioni {
+    background-color: #fffd;
 }
