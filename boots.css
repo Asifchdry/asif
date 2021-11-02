@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+h3 , p {
+    color: white;
+}
+
+.row {
+    margin: 15px;
+    padding-top: 20px;
+}
+
+.row2 {
+    margin: 5px;
+    padding-top: 10px;
+}
