@@ -1,0 +1,57 @@
+h1, p {
+    color: black;
+}
+p {
+    font-size: 20px;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.col-4 img {
+    padding-top: 100px;
+}
+
+.w3-bar {
+    text-align: center;
+}
+
+.w3-bar a {
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.w3-bar a:hover {
+    color: indigo;
+}
+
+.painike {
+    border-color: indigo;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 300px;
+    color: palevioletred;
+    background-color: black;
+}
+
+.painike:hover {
+    background-color: #fff;
+    color: rebeccapurple;
+}
+
+.texti {
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+/* footer alku */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+/* footer loppu */
