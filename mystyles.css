@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    color: blueviolet;
+}
+
+.btn {
+    margin-left: 900px;
+    color: blueviolet;
+    background-color: black;
+}
+
+.glyph-icon svg {
+    width:16px;
+    height:16px;
+}
+
+.kuva {
+    margin-left: 650px;
+}
+
+.teksti {
+    text-align: center;
+}
+
+hr {
+    color: blueviolet;
+}
