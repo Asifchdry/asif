@@ -1,58 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>HTML Tables and Forms</title>
+    <link rel="stylesheet" href="styleform.css" />
   </head>
   <body>
-
+    <div id="teksttti">
+      <h1>Tables and Forms</h1>
+      <p>By Asif Chaudhry</p>
+      <img src="kuvat/bmw.png" alt="bmw" width="200" height="200" />
+    </div>
 
     <table id="table">
       <tr>
-        <th>Company</th>
-        <th>Contact</th>
-        <th>Country</th>
+        <th>Car</th>
+        <th>Model</th>
+        <th>Power</th>
       </tr>
       <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
+        <td>BMW</td>
+        <td>M5 F90 CS</td>
+        <td>635 HP</td>
       </tr>
       <tr>
-        <td>Berglunds snabbköp</td>
-        <td>Christina Berglund</td>
-        <td>Sweden</td>
+        <td>Mercedes AMG</td>
+        <td>GT63 S</td>
+        <td>635 HP</td>
       </tr>
       <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td>Ferrari</td>
+        <td>458 Speciale</td>
+        <td>597 HP</td>
       </tr>
       <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
+        <td>Lamborghini</td>
+        <td>Aventador SVJ Roadster</td>
+        <td>770 HP</td>
       </tr>
       <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
+        <td>Bugatti</td>
+        <td>Chiron</td>
+        <td>1479 HP</td>
       </tr>
-      <tr>
-        <td>Königlich Essen</td>
-        <td>Philip Cramer</td>
-        <td>Germany</td>
-      </tr>
-      <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-      </tr>
-      <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
-      </tr>
-      
     </table>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." />
+
+        <label for="textarea">Message</label><br />
+        <textarea rows="4" cols="80">Write here</textarea><br />
+
+        <input
+          type="checkbox"
+          id="newsletter"
+          name="newsletter"
+          value="Letter"
+        />
+        <label for="newsletter"> Sign up for newsletter</label><br /><br />
+
+        <label for="cars">Dream Car</label>
+        <select id="cars" name="cars">
+          <option value="bmw">Bmw M5 CS F90</option>
+          <option value="mercedes">Mercedes AMG GT63 S</option>
+          <option value="ferrari">Ferrari 458</option>
+          <option value="lamborghini">
+            Lamborghini Aventador SVJ Roadster
+          </option>
+          <option value="bugatti">Bugatti Chiron</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
 </html>
