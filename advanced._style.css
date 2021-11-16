@@ -1,12 +1,12 @@
 .container {
-    box-shadow: black;
+    box-shadow: none;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 h1{
-    text-shadow: darkorchid;
+    text-shadow: none;
 }
 
 .element {
