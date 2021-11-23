@@ -197,6 +197,7 @@
   .footer-dark .item.text {
     margin-bottom:36px;
   }
+
   
   @media (max-width:767px) {
     .footer-dark .item.text {
@@ -205,7 +206,7 @@
   }
   
   .footer-dark .item.text p {
-    opacity:0.6;
+    opacity: 0.6;
     margin-bottom:0;
   }
   
