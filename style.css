@@ -384,7 +384,7 @@ h1 {
     cursor: pointer;
     }
     button:hover {
-    background: #666;
+    background: goldenrod;
     }
     @media (min-width: 568px) {
     .name-item, .city-item {
@@ -399,3 +399,7 @@ h1 {
     width: calc(50% - 8px);
     }
     }
+
+#vuokralleteksti {
+    font-size: 20px;
+}

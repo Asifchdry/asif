@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="bmw.html">BMW</a>
+            <a class="nav-link" href="mercedes.html">Mercedes</a>
+            <a class="nav-link" href="vuokraus.html">Vuokraus</a>
+            <a class="nav-link" href="vuokralle.html">Oman Auton Vuokraus</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="welcome">
+      <h2>Asif Car Rental</h2>
+      <h2>Toteuta unelmasi meillä</h2>
+      <h3>Elä päiväsi kuin kuningas</h3>
+      <p id="vuokralleteksti">Uusimman palvelumme avulla voit laittaa oman autosi vuokralle meille, kun sillä ei ole käyttöä. <br>
+          Otamme täyden vastuun autostasi. Huollot ja ylläpito kustannukset siirtyvät meille. Säilytämme autot lämpimässä ja lukituissa tiloissa <br>
+      Otamme vuokrattavaksi tällä hetkellä vain alle 12 vuotta vanhoja autoja yhteistyökumppaniemme vakuutusehtojen vuoksi. <br> Pidäthän huolen, että autosi on mainitsemasi kunnossa huoltojen ja vikojen osalta.
+        Noudamme sekä kuljetamme autot asiakkaille itse. Meillä on ammattitaitoiset kuskit ja pesu ammattilaiset.
+    </p>
+      <img src="kuvat/kruunu.jpg" alt="kruunu" height="50" width="100" />
+    </div>
+
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>Täytä Autosi Tiedot</h1>
+        </div>
+        <div class="item">
+          <p>Nimi</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="Etunimi" />
+            <input type="text" name="name" placeholder="Sukunimi" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Sähköposti</p>
+          <input type="text" name="email" />
+        </div>
+        <div class="item">
+          <p>Puhelinnumero</p>
+          <input type="text" name="number" />
+        </div>
+        <div class="item">
+          <p>Osoite</p>
+          <input type="text" name="name" placeholder="Katuosoite" />
+
+          <div class="city-item">
+            <input type="text" name="name" placeholder="Kaupunki" />
+            <input type="text" name="name" placeholder="Kunta" />
+            <input type="text" name="name" placeholder="Postinumero" />
+            <select>
+              <option value="">Maa</option>
+              <option value="1">Suomi</option>
+            </select>
+          </div>
+        </div>
+        <div class="question">
+          <p>Auton Tiedot</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="vehicle" />
+              <label for="radio_1" class="radio"
+                ><span> (2 paikkainen)</span></label
+              >
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="vehicle" />
+              <label for="radio_2" class="radio"
+                ><span>(4 paikkainen)</span></label
+              >
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_3" name="vehicle" />
+              <label for="radio_3" class="radio"
+                ><span>(5 paikkainen)</span></label
+              >
+            </div><br>
+
+            <p>Polttoaine</p>
+
+            <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Bensiini</span></label
+                >
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Diesel</span></label
+                >
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Hybridi</span></label
+                >
+              </div><br><br>
+
+              <div class="city-item">
+                <input type="text" name="name" placeholder="Merkki" />
+                <input type="text" name="name" placeholder="Malli" />
+                <input type="text" name="name" placeholder="Korimalli" />
+                <input type="text" name="name" placeholder="Vuosimalli" />
+                <input type="text" name="name" placeholder="Teho" />
+                
+
+              </div><br>
+
+              <p>Vetotapa</p>
+
+              <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Neliveto</span></label
+                >
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Takaveto</span></label
+                >
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="vehicle" />
+                <label for="radio_3" class="radio"
+                  ><span>Etuveto</span></label
+                >
+              </div>
+
+          </div>
+        </div>
+        
+        
+
+        
+
+        <div class="item">
+          <p>Kerro lyhyesti autostasi</p>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Lähetä</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Palvelut</h3>
+              <ul>
+                <li><a href="bmw.html">BMW</a></li>
+                <li><a href="mercedes.html">Mercedes</a></li>
+                <li><a href="#">Vuokraus</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Tietoja</h3>
+              <ul>
+                <li><a href="#yrityksestä">Yrityksestä</a></li>
+                <li><a href="#paikka">Sijainti</a></li>
+                <li><a href="#">Auto vuokralle</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>Asif Car Rental</h3>
+              <p>
+                Tervetuloa vuokraamaan suomen parhaat erikoisautot nyt
+                kätevästi. Ota auto käyttöön alle tunnissa kätevät
+                kuljetuspalvelumme. <br />
+                Elä kuin kuningas
+              </p>
+            </div>
+          </div>
+          <p class="copyright">Asif Car rental © 2018</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
