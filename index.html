@@ -19,7 +19,6 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,14 +32,184 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">BMW</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="bmw.html" target="_blank">BMW</a>
             <a class="nav-link" href="#">Mercedes</a>
-            <a class="nav-link" href="#">Rent Car</a>
+            <a class="nav-link" href="#">Vuokraus</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="welcome">
+      <h1>Asif Car Rental</h1>
+      <h2>Toteuta unelmasi meillä</h2>
+      <h3>Elä päiväsi kuin kuningas</h3>
+      <img src="kuvat/kruunu.jpg" alt="kruunu" height="50" width="100" />
+    </div>
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">BMW M4</div>
+        <img src="kuvat/bmw1.jpg" style="width: 100%" alt="auto" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">BMW X5</div>
+        <img src="kuvat/bmw2.jpg" style="width: 100%" alt="auto" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">AMG S 63 Cabrio</div>
+        <img src="kuvat/mersu1.jpg" style="width: 100%" alt="auto" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">AMG GTR</div>
+        <img src="kuvat/mersu2.jpg" style="width: 100%" alt="auto" />
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption">Vuokrattavissa</p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="kuvat/bmw1.jpg"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="BMW M4"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="kuvat/bmw2.jpg"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="BMW X5"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="kuvat/mersu1.jpg"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="AMG S63 Cabrio "
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="kuvat/mersu2.jpg"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="AMG GTR "
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="myyntipuhe">
+      <h1>Yrityksestä</h1>
+      <h3>
+        Olemme Vantaalla perustettu 2021 yritys. Meidän erikoisalaamme kuuluu
+        erikoisautojen vuokraus, säilöntä ja pesu. <br />
+        Meille on myös mahdollista tuoda omia autoja vuokrattavaksi, pidämme
+        autoista huolta ja otamme täyden vastuun autosta. <br />
+        Palvelun laatu ja mukavuus ovat elintärkeitä kulmakiviä meille. Autot
+        kotipihallesi kuljetettuna 30 minuutissa tilauksesta <br />
+        Nouto valitsemastasi sijainnista.
+      </h3>
+    </div>
+
+    <div class="sijainti">
+        <h2>Sijainti</h2><br>
+        <img src="kuvat/talliosake.jpeg" alt="toimipaikka" width="700"
+        height="300">
+        <p class="osoite">Sijaitsemme Vantaan keimolassa Hämeenlinnan moottoritien kupeessa <br>
+            Osoite: Keimolanmäentie 11 
+            Olemme avoinna 24/7 ma-su
+        </p>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Palvelut</h3>
+                        <ul>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Mercedes</a></li>
+                            <li><a href="#">Vuokraus</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Tietoja</h3>
+                        <ul>
+                            <li><a href="#">Yrityksestä</a></li>
+                            <li><a href="#">Sijainti</a></li>
+                            <li><a href="#">Auto vuokralle</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Asif Car Rental</h3>
+                        <p>Tervetuloa vuokraamaan suomen parhaat erikoisautot nyt kätevästi. Ota auto käyttöön alle tunnissa kätevät kuljetuspalvelumme. <br> Elä kuin kuningas</p>
+                    </div>
+                </div>
+                <p class="copyright">Asif Car rental © 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
